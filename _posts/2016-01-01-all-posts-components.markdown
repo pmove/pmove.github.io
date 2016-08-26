@@ -4,6 +4,7 @@ title: "All Posts Components"
 date: 2016-01-01 18:54:28 +07:00
 author: sugeng tigefa
 categories: a1
+version: 1
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
