@@ -3,8 +3,8 @@ layout: default
 ---
 <p>Contém as APIs para integração com o PMove</p>
 
-{% for category in site.categories %}
-<li><a name="{{ category | first }}">{{ category | first }}</a>
+{% for category in site.default_categories %}
+<li>category
 </li>
 {% endfor %}
 
@@ -20,5 +20,3 @@ layout: default
 </li>
 {% endfor %}
 </ul>
-
-<a href="{{ "/feed.xml" | prepend: site.baseurl }}"><button class="mdl-button mdl-js-button mdl-button--primary">via RSS</button></a>

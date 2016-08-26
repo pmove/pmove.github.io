@@ -12,6 +12,10 @@ description: "Documentação das APIs de integração do PMove"
 url: "http://pmove.github.io" # the base hostname & protocol for your site
 github_username: pmove
 
+default_categories:
+  - a1
+  - a2
+
 # Google cse -> read the README.md for learn more.
 # gcse: 006270711061491111331:vsivtajjjh0
 
