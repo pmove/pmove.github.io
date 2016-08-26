@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "All Posts Components"
+category: a1
 date: 2016-01-01 18:54:28 +07:00
 author: sugeng tigefa
 categories: jekmdl posts

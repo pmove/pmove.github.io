@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
+category: a2
 date:   2016-01-01 06:54:43 +0700
 author: sugeng tigefa
 categories: jekyll update
