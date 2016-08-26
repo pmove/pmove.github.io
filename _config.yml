@@ -8,9 +8,9 @@
 # Site settings
 title: PMove
 email: contato@mrp3.com.br
-description: > Documentação das APIs de integração do PMove
+description: "Documentação das APIs de integração do PMove"
 url: "http://pmove.github.io" # the base hostname & protocol for your site
-github_username:  pmove
+github_username: pmove
 
 # Google cse -> read the README.md for learn more.
 # gcse: 006270711061491111331:vsivtajjjh0
