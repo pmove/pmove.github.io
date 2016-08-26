@@ -19,12 +19,14 @@
         <span class="mdl-layout-title"><a href="/">{{ site.title }}</a></span>
         <nav class="mdl-navigation">
             {% for category in site.default_categories %}
+                {% if site.categories[category].length > 0 %}
                 <ul class="jekmdl-post-list">
-                    <li class="mdl-list__item"><strong>{{ category }}</strong></li>
+                    <li class="mdl-list__item"><strong>{{ category.upcase }}</strong></li>
                     {% for post in site.categories[category] %}
                         <li class="mdl-list__item"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
                     {% endfor %}
                 </ul>
+                {% endif %}
             {% endfor %}
         </nav>
     </div>
