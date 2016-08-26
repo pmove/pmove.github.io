@@ -25,7 +25,7 @@ markdown: kramdown
 
 # Outputting
 relative_permalinks: false
-permalink:           /:version/:categories/:title
+permalink:           /:path/:basename:output_ext
 timezone:            Asia/Jakarta
 
 # Markdown Processors
