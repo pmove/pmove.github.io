@@ -5,6 +5,8 @@ layout: default
 <h2>Introdução</h2>
 <p>Contém as APIs para integração com o PMove</p>
 
-{% for category in site.categories %}
-{{ category | first }}
+{% for page in site.pages %}
+{% if page.resource == true %}
+{{ page.categories }}
+{% endif %}
 {% endfor %}
