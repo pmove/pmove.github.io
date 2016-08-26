@@ -20,7 +20,7 @@
         <nav class="mdl-navigation">
             {% for category in site.default_categories %}
                 <ul class="jekmdl-post-list">
-                    <li class="mdl-list__item"><h2>{{ category }}</h2></li>
+                    <li class="mdl-list__item"><strong>{{ category }}</strong></li>
                     {% for post in site.categories[category] %}
                         <li class="mdl-list__item"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
                     {% endfor %}
