@@ -19,18 +19,10 @@
         <span class="mdl-layout-title">{{ site.title }}</span>
         <nav class="mdl-navigation">
             {% for category in site.default_categories %}
-                <ul class="mdl-list">
-                    <li class="mdl-list__item">
-                        <span class="mdl-list__item-primary-content">
-                            <strong>{{ category }}</strong>
-                        </span>
-                    </li>
+                <ul class="jekmdl-post-list">
+                    <li class="mdl-list__item"><h2>{{ category }}</h2></li>
                     {% for post in site.categories[category] %}
-                        <li class="mdl-list__item">
-                            <span class="mdl-list__item-primary-content">
-                                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                            </span>
-                        </li>
+                        <li class="mdl-list__item"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
                     {% endfor %}
                 </ul>
             {% endfor %}
