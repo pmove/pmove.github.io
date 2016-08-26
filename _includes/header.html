@@ -1,29 +1,28 @@
 <div class="mdl-layout mdl-js-layout">
-  <header class="mdl-layout__header">
-    <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title">{{ site.title }}</span>
-      <div class="mdl-layout-spacer"></div>
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
-        <form action='{{ "/search.html" | prepend: site.baseurl }}' method='get' name='searchform'>
-          <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
-            <i class="material-icons">search</i>
-          </label>
-          <div class="mdl-textfield__expandable-holder">
-            <input class="mdl-textfield__input" type="text" id="search" name="q">
-            <label class="mdl-textfield__label" for="search">Enter your query...</label>
-          </div>
-        </form>
-      </div>
-    </div>
-  </header>
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">{{ site.title }}</span>
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="#">Products</a>
-      <a class="mdl-navigation__link" href="#">Services</a>
-      <a class="mdl-navigation__link" href="#">Portfolios</a>
-      <a class="mdl-navigation__link" href="#">Achievements</a>
-      <a class="mdl-navigation__link" href="#">Blog</a>
-    </nav>
-  </div>
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title">{{ site.title }}</span>
+            <div class="mdl-layout-spacer"></div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                <form action='{{ "/search.html" | prepend: site.baseurl }}' method='get' name='searchform'>
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+                        <i class="material-icons">search</i>
+                    </label>
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" id="search" name="q">
+                        <label class="mdl-textfield__label" for="search">Enter your query...</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="mdl-layout__drawer">
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="#">Products</a>
+                <a class="mdl-navigation__link" href="#">Services</a>
+                <a class="mdl-navigation__link" href="#">Portfolios</a>
+                <a class="mdl-navigation__link" href="#">Achievements</a>
+                <a class="mdl-navigation__link" href="#">Blog</a>
+            </nav>
+        </div>
+    </header>
 </div>
