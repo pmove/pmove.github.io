@@ -1,27 +1,43 @@
-# Dependencies
-markdown:         kramdown
-highlighter:      rouge
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-# Permalinks
-permalink:        pretty
-#relative_permalinks: true
+# Site settings
+title: jekmdl
+email: tigefa@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "/jekmdl" # the subpath of your site, e.g. /blog
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
 
-# Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
-baseurl:          /
-gems: ["jekyll-paginate"]
+# Google cse -> read the README.md for learn more.
+gcse: 006270711061491111331:vsivtajjjh0
 
-author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+# Conversion
+markdown:    kramdown
 
-paginate:         5
+# Outputting
+relative_permalinks: false
+permalink:     /articles/:title.html
+timezone:      Asia/Jakarta
 
-# Custom vars
-version:          2.1.0
+# Markdown Processors
+kramdown:
+   input: GFM
 
-github:
-  repo:           https://github.com/poole/hyde
+# Exclude file
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - bower_components
+  - node_modules
+  - vendor
