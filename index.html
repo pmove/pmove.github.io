@@ -4,21 +4,3 @@ layout: default
 
 <h2>Introdução</h2>
 <p>Contém as APIs para integração com o PMove</p>
-
-{% for category in site.default_categories %}
-<li>{{ category }}
-</li>
-{% endfor %}
-
-<div class="jekmdl-crumbs mdl-color-text--grey-500">
-{{ site.title }} &gt; {{ page.title }}
-</div>
-
-<ul class="jekmdl-post-list">{% for post in site.posts %}
-<li>
-<h2>
-<a class="jekmdl-post-list" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> &gt;&gt; {{ site.time | date_to_long_string }}
-</h2>
-</li>
-{% endfor %}
-</ul>
