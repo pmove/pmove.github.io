@@ -19,10 +19,18 @@
         <span class="mdl-layout-title">{{ site.title }}</span>
         <nav class="mdl-navigation">
             {% for category in site.default_categories %}
-                <ul class="demo-list-item mdl-list">
-                    <li class="mdl-list__item"><strong>{{ category }}</strong></li>
+                <ul class="mdl-list">
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <strong>{{ category }}</strong>
+                        </span>
+                    </li>
                     {% for post in site.categories[category] %}
-                        <li class="mdl-list__item"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+                        <li class="mdl-list__item">
+                            <span class="mdl-list__item-primary-content">
+                                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                            </span>
+                        </li>
                     {% endfor %}
                 </ul>
             {% endfor %}
