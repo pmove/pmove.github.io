@@ -11,7 +11,7 @@ layout: default
 {% endif %}
 {% endfor %}
 {% for category in site.default_categories %}
-{{ category }}
+{{ category.upcase }}
 {% endfor %}
 <!--
 {% for page in site.pages %}
