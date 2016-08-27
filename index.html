@@ -10,3 +10,11 @@ layout: default
 {{ page.categories }}
 {% endif %}
 {% endfor %}
+{{ site.default_categories }}
+<!--
+{% for page in site.pages %}
+{% if page.resource == true && page.categories contains category %}
+<li class="mdl-list__item"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+{% endif %}
+{% endfor %}
+-->
