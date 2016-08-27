@@ -14,14 +14,14 @@ github_username: pmove
 
 # Documentation system variables
 default_categories:
-  - Planejamento
-  - Rota
-  - Produto
-  - Equipe
-  - Veículo
-  - Usuário
-  - Roteirizador
-  - Suporte
+  - 'Planejamento'
+  - 'Rota'
+  - 'Produto'
+  - 'Equipe'
+  - 'Veículo'
+  - 'Usuário'
+  - 'Roteirizador'
+  - 'Suporte'
 
 # Google cse -> read the README.md for learn more.
 # gcse: 006270711061491111331:vsivtajjjh0
