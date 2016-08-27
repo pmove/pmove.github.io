@@ -10,7 +10,11 @@ layout: default
 {{ page.categories }}
 {% endif %}
 {% endfor %}
-{{ site.default_categories }}
+{% for category in site.default_categories %}
+<ul class="jekmdl-post-list">
+    <li class="mdl-list__item"><strong>{{ category.upcase }}</strong></li>
+</ul>
+{% endfor %}
 <!--
 {% for page in site.pages %}
 {% if page.resource == true && page.categories contains category %}
