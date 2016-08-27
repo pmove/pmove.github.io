@@ -11,9 +11,7 @@ layout: default
 {% endif %}
 {% endfor %}
 {% for category in site.default_categories %}
-<ul class="jekmdl-post-list">
-    <li class="mdl-list__item"><strong>{{ category.upcase }}</strong></li>
-</ul>
+{{ category.upcase }}
 {% endfor %}
 <!--
 {% for page in site.pages %}
