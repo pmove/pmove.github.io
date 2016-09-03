@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Adicionar Planejamento"
-categories: ['Planejamento']
-resource: true
+categories: Planejamento Rota
+visible: true
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 

@@ -22,7 +22,7 @@
             <ul class="jekmdl-post-list">
                 <li class="mdl-list__item"><strong>{{ category }}</strong></li>
                 {% for page in site.pages %}
-                    {% if page.resource == true %}
+                    {% if page.visible == true %}
                         {% for c in page.categories %}
                             {% if c == category %}
                                 <li class="mdl-list__item"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
