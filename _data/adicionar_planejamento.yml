@@ -18,12 +18,11 @@ table:
     -
       - 'programado'
       - 'String'
-      - |
-      'Data programado para o planejamento.
+      - "Data programado para o planejamento.
       Formatos aceitos:
       - YYYY-mm-dd
       - dd/mm/YYYY
-      Caso não seja informado, fica sendo a data atual'
+      Caso não seja informado, fica sendo a data atual"
       - 'Não'
     -
       - 'qrcode-inicio'
