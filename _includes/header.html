@@ -20,7 +20,7 @@
         <nav class="mdl-navigation">
             {% for category in site.default_categories %}
             <ul class="jekmdl-post-list">
-                <li class="mdl-list__item"><strong>{{ category }}</strong></li>
+                <li class="mdl-list__item category"><strong>{{ category }}</strong></li>
                 {% for page in site.pages %}
                     {% if page.visible == true %}
                         {% for c in page.categories %}
