@@ -6,7 +6,19 @@ title: "Adicionar Planejamento"
 description: "Documentação referente a adição de planejamento"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Esta forma de serviço utiliza a tecnologia de Web Services em REST, utilizando o protocolo HTTP e retornando um JSON para troca de informações.
+
+#### Requisição
+```
+Method   : POST
+Path     : http://www.pmove.planmob.com.br/rest/planejamento/insert/json
+Headers  : Content-type: application/json; charset=utf-8
+           Authorization: Basic Base64(login:senha)
+``` 
+
+#### Parâmetros
+| Tables   |      Are      |  Cool |
+|----------|:-------------:|------:|
+| col 1 is |  left-aligned | $1600 |
+| col 2 is |    centered   |   $12 |
+| col 3 is | right-aligned |    $1 |
