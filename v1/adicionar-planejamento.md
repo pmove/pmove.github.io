@@ -16,25 +16,5 @@ Headers  : Content-type: application/json; charset=utf-8
            Authorization: Basic Base64(login:senha)
 ``` 
 
-{{ page.path }}
 #### Parâmetros
-<table class="mdl-data-table mdl-js-data-table">
-  <thead>
-    <tr>
-      <th class="mdl-data-table__cell--non-numeric"><strong>Campo</strong></th>
-      <th class="mdl-data-table__cell--non-numeric"><strong>Tipo</strong></th>
-      <th class="mdl-data-table__cell--non-numeric"><strong>Descrição</strong></th>
-      <th class="mdl-data-table__cell--non-numeric"><strong>Obrigatório</strong></th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for param in site.data.adicionar_planejamento.parameters %}
-    <tr>
-      <td class="mdl-data-table__cell--non-numeric">{{ param[0] }}</td>
-      <td class="mdl-data-table__cell--non-numeric">{{ param[1] }}</td>
-      <td class="mdl-data-table__cell--non-numeric">{{ param[2] }}</td>
-      <td class="mdl-data-table__cell--non-numeric">{{ param[3] }}</td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+{% include component.table.html headers=['Campo', 'Tipo'] %}
