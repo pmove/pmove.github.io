@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Adicionar Planejamento"
-categories: ['Planejamento','Rota']
+categories: ['Planejamento']
 visible: true
 ---
 
