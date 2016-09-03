@@ -17,4 +17,4 @@ Headers  : Content-type: application/json; charset=utf-8
 ``` 
 
 #### Parâmetros
-{% include component.table.html headers=['Campo', 'Tipo'] %}
+{% include component.table.html headers='aaa' %}
