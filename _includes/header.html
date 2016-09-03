@@ -1,8 +1,7 @@
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-            <span class="mdl-layout-title"><a class="white" href="/">{{ site.title }}
-{{ page.url }}</a></span>
+            <span class="mdl-layout-title"><a class="white" href="/">{{ site.title }}</a></span>
             <div class="mdl-layout-spacer"></div>
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
                 <form action='{{ "/search" | prepend: site.baseurl }}' method='get' name='searchform'>
@@ -26,7 +25,9 @@
                     {% if p.visible == true %}
                         {% for c in p.categories %}
                             {% if c == category %}
-                                <li class="mdl-list__item mdl-button {% if p.url == page.url %}bold{% endif %}"><a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }} {{ p.url }}</a></li>
+                                <li class="mdl-list__item mdl-button {% if p.url == page.url %}current{% endif %}">
+                                    <a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
+                                </li>
                             {% endif %}
                         {% endfor %}
                     {% endif %}

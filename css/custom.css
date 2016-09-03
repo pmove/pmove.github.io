@@ -19,5 +19,5 @@ a {
     width: 100%;
 }
 
-.bold { font-weight: bold; }
+.current { color: blue; }
 .hide { display: none; }
