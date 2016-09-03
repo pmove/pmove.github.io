@@ -4,7 +4,15 @@ categories: ['Planejamento']
 visible: true
 title: "Adicionar Planejamento"
 description: "Documentação referente a adição de planejamento"
----
+params: [
+    [ "usuario", "String", "E-mail dos usuários responsáveis pelo planejamento, é o mesmo usado no login", "Sim" ],
+    [ "usuario", "String", "E-mail dos usuários responsáveis pelo planejamento, é o mesmo usado no login", "Sim" ],
+    [ "usuario", "String", "E-mail dos usuários responsáveis pelo planejamento, é o mesmo usado no login", "Sim" ],
+    [ "usuario", "String", "E-mail dos usuários responsáveis pelo planejamento, é o mesmo usado no login", "Sim" ],
+    [ "usuario", "String", "E-mail dos usuários responsáveis pelo planejamento, é o mesmo usado no login", "Sim" ],
+    [ "usuario", "String", "E-mail dos usuários responsáveis pelo planejamento, é o mesmo usado no login", "Sim" ],
+] 
+-------
 
 Esta forma de serviço utiliza a tecnologia de Web Services em REST, utilizando o protocolo HTTP e retornando um JSON para troca de informações.
 
@@ -28,28 +36,12 @@ Headers  : Content-type: application/json; charset=utf-8
   </thead>
   <tbody>
     <tr>
-      <td>John Lennon</td>
-      <td>The smart one</td>
-      <td>40</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td>Paul McCartney</td>
-      <td>The cute one</td>
-      <td>73</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td>George Harrison</td>
-      <td>The shy one</td>
-      <td>58</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td>Ringo Starr</td>
-      <td>The funny one</td>
-      <td>74</td>
-      <td>Yes</td>
+    {% for param in page.params %}
+      <td class="mdl-data-table__cell--non-numeric">{{ param[0] }}</td>
+      <td class="mdl-data-table__cell--non-numeric">{{ param[1] }}</td>
+      <td class="mdl-data-table__cell--non-numeric">{{ param[2] }}</td>
+      <td class="mdl-data-table__cell--non-numeric">{{ param[3] }}</td>
+    {% endfor %}
     </tr>
   </tbody>
 </table>
