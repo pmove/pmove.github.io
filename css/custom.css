@@ -8,11 +8,13 @@ a {
 
 .mdl-list__item.category * {
     color: #BBBBBB;
+    padding-left: 30px;
     text-transform: uppercase;
 }
 
 .mdl-list__item.mdl-button {
+    padding: 0;
     text-align: left;
     text-transform: none;
-    padding: 0 5px;
+    width: 100%;
 }
