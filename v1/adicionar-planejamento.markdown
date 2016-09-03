@@ -1,8 +1,9 @@
 ---
 layout: page
-title: "Adicionar Planejamento"
 categories: ['Planejamento']
 visible: true
+title: "Adicionar Planejamento"
+description: "Documentação referente a adição de planejamento"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
