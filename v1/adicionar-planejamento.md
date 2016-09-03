@@ -16,7 +16,7 @@ Headers  : Content-type: application/json; charset=utf-8
            Authorization: Basic Base64(login:senha)
 ``` 
 
-{{ site.data }}
+{{ page.path }}
 #### Parâmetros
 <table class="mdl-data-table mdl-js-data-table">
   <thead>
