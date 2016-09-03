@@ -4,8 +4,10 @@ layout: default
 <div class="jekmdl-crumbs mdl-color-text--grey-500">
 {{ site.title }} &gt; {{ page.title }}
 </div>
-<h3>{{ page.title }}</h3>
-<h4>{{ page.description }}</h4>
+<div id="page">
+    <h3>{{ page.title }}</h3>
+    <h4 class="mdl-color-text--grey-500">{{ page.description }}</h4>
+</div>
 <div class="jekmdl-post-content">
 {{ content }}
 </div>
