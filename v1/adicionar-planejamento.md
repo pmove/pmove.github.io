@@ -35,7 +35,7 @@ Headers  : Content-type: application/json; charset=utf-8
     </tr>
   </thead>
   <tbody>
-    {% for param in page.params %}
+    {% for param in site.data.adicionar_planejamento.parameters %}
     <tr>
       <td class="mdl-data-table__cell--non-numeric">{{ param[0] }}</td>
       <td class="mdl-data-table__cell--non-numeric">{{ param[1] }}</td>
