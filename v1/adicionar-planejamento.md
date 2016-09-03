@@ -35,13 +35,13 @@ Headers  : Content-type: application/json; charset=utf-8
     </tr>
   </thead>
   <tbody>
-    <tr>
     {% for param in page.params %}
+    <tr>
       <td class="mdl-data-table__cell--non-numeric">{{ param[0] }}</td>
       <td class="mdl-data-table__cell--non-numeric">{{ param[1] }}</td>
       <td class="mdl-data-table__cell--non-numeric">{{ param[2] }}</td>
       <td class="mdl-data-table__cell--non-numeric">{{ param[3] }}</td>
-    {% endfor %}
     </tr>
+    {% endfor %}
   </tbody>
 </table>
