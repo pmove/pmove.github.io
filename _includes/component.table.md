@@ -1,3 +1,5 @@
+{{ site.data.adicionar_planejamento2 }}
+
 <table class="mdl-data-table mdl-js-data-table">
     {% if site.data[include.data][include.key].header %}
     <thead>
