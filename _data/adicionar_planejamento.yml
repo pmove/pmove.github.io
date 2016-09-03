@@ -18,7 +18,8 @@ table:
     -
       - 'programado'
       - 'String'
-      - 'Data programado para o planejamento.
+      |-
+      'Data programado para o planejamento.
       Formatos aceitos:
       - YYYY-mm-dd
       - dd/mm/YYYY
