@@ -34,10 +34,6 @@ relative_permalinks: false
 permalink:           /:path
 timezone:            Asia/Jakarta
 
-# Markdown Processors
-kramdown:
-   input: GFM
-
 # Exclude file
 exclude:
   - Gemfile
