@@ -1,3 +1,5 @@
 $(document).ready(function(){
-    console.log($('.mdl-list__item.category').parent().children());
+    $('.mdl-list__item.category').parent().each(function() {
+        console.log($(this).children());
+    });
 });
