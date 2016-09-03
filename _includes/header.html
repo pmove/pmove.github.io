@@ -21,11 +21,13 @@
             {% for category in site.default_categories %}
             <ul class="jekmdl-post-list">
                 <li class="mdl-list__item category"><strong>{{ category }}</strong></li>
+                {%= aa = 'aaaa' %}
                 {% for page in site.pages %}
                     {% if page.visible == true %}
                         {% for c in page.categories %}
                             {% if c == category %}
                                 <li class="mdl-list__item mdl-button"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                {{aa}}
                             {% endif %}
                         {% endfor %}
                     {% endif %}
