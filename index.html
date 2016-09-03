@@ -4,15 +4,3 @@ layout: default
 
 <h2>Introdução</h2>
 <p>Contém as APIs para integração com o PMove</p>
-
-{% for page in site.pages %}
-{% if page.resource == true %}
-{{ page.categories }}
-{% endif %}
-{% endfor %}
-{% for category in site.default_categories %}
-{{ category.upcase }}
-{% endfor %}
-<!--
-
--->
