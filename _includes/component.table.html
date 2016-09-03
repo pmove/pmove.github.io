@@ -1,21 +1,19 @@
-{{ include.headers }}
+{{ site.data[include.data][include.key] }}
 
 <table class="mdl-data-table mdl-js-data-table">
     <thead>
     <tr>
-        <th class="mdl-data-table__cell--non-numeric"><strong>Campo</strong></th>
-        <th class="mdl-data-table__cell--non-numeric"><strong>Tipo</strong></th>
-        <th class="mdl-data-table__cell--non-numeric"><strong>Descrição</strong></th>
-        <th class="mdl-data-table__cell--non-numeric"><strong>Obrigatório</strong></th>
+        {% for header in site.data[include.data][include.key].header %}
+        <th class="mdl-data-table__cell--non-numeric"><strong>{{ header }}</strong></th>
+        {% endfor %}
     </tr>
     </thead>
     <tbody>
-    {% for param in site.data.adicionar_planejamento.parameters %}
+    {% for body in site.data[include.data][include.key].body %}
     <tr>
-        <td class="mdl-data-table__cell--non-numeric">{{ param[0] }}</td>
-        <td class="mdl-data-table__cell--non-numeric">{{ param[1] }}</td>
-        <td class="mdl-data-table__cell--non-numeric">{{ param[2] }}</td>
-        <td class="mdl-data-table__cell--non-numeric">{{ param[3] }}</td>
+        {% for cell in body %}
+        <td class="mdl-data-table__cell--non-numeric">{{ cell }}</td>
+        {% endfor %}
     </tr>
     {% endfor %}
     </tbody>
