@@ -22,8 +22,8 @@ a {
 .current { color: blue; }
 .hide { display: none; }
 
-h2.page { margin-bottom: 0; }
-h3.page {
+h3.page { margin-bottom: 0; }
+h4.page {
     font-size: 19px;
     margin-top: 0;
 }
