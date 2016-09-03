@@ -1,0 +1,10 @@
+{
+  "parameters" : [
+    [ "usuario", "String", "E-mail dos usuários responsáveis pelo planejamento, é o mesmo usado no login", "Sim" ],
+    [ "usuario", "String", "E-mail dos usuários responsáveis pelo planejamento, é o mesmo usado no login", "Sim" ],
+    [ "usuario", "String", "E-mail dos usuários responsáveis pelo planejamento, é o mesmo usado no login", "Sim" ],
+    [ "usuario", "String", "E-mail dos usuários responsáveis pelo planejamento, é o mesmo usado no login", "Sim" ],
+    [ "usuario", "String", "E-mail dos usuários responsáveis pelo planejamento, é o mesmo usado no login", "Sim" ],
+    [ "usuario", "String", "E-mail dos usuários responsáveis pelo planejamento, é o mesmo usado no login", "Sim" ]
+  ]
+}

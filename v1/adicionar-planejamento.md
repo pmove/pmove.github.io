@@ -4,14 +4,6 @@ categories: ['Planejamento']
 visible: true
 title: "Adicionar Planejamento"
 description: "Documentação referente a adição de planejamento"
-params: [
-    [ "usuario", "String", "E-mail dos usuários responsáveis pelo planejamento, é o mesmo usado no login", "Sim" ],
-    [ "usuario", "String", "E-mail dos usuários responsáveis pelo planejamento, é o mesmo usado no login", "Sim" ],
-    [ "usuario", "String", "E-mail dos usuários responsáveis pelo planejamento, é o mesmo usado no login", "Sim" ],
-    [ "usuario", "String", "E-mail dos usuários responsáveis pelo planejamento, é o mesmo usado no login", "Sim" ],
-    [ "usuario", "String", "E-mail dos usuários responsáveis pelo planejamento, é o mesmo usado no login", "Sim" ],
-    [ "usuario", "String", "E-mail dos usuários responsáveis pelo planejamento, é o mesmo usado no login", "Sim" ],
-] 
 ---
 
 Esta forma de serviço utiliza a tecnologia de Web Services em REST, utilizando o protocolo HTTP e retornando um JSON para troca de informações.
