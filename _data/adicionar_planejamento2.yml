@@ -1,0 +1,31 @@
+- table:
+  - header:
+    - 'Campo'
+    - 'Tipo'
+    - 'Descrição'
+    - 'Obrigatório'
+  - body:
+    - 'usuario'
+    - 'String'
+    - 'E-mail dos usuários responsáveis pelo planejamento, é o mesmo usado no login'
+    - 'Sim'
+  - body:
+    - 'usuario'
+    - 'String'
+    - 'E-mail dos usuários responsáveis pelo planejamento, é o mesmo usado no login'
+    - 'Sim'
+  - body:
+    - 'usuario'
+    - 'String'
+    - 'E-mail dos usuários responsáveis pelo planejamento, é o mesmo usado no login'
+    - 'Sim'
+  - body:
+    - 'usuario'
+    - 'String'
+    - 'E-mail dos usuários responsáveis pelo planejamento, é o mesmo usado no login'
+    - 'Sim'
+  - body:
+    - 'usuario'
+    - 'String'
+    - 'E-mail dos usuários responsáveis pelo planejamento, é o mesmo usado no login'
+    - 'Sim'
