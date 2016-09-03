@@ -3,9 +3,16 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-
-}
-
 .white { color: white; }
 .black { color: black; }
+
+.mdl-list__item.category {
+    color: #BBBBBB;
+    text-transform: uppercase;
+}
+
+.mdl-list__item.mdl-button {
+    text-align: left;
+    text-transform: none;
+    padding: 0 5px;
+}
