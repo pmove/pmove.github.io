@@ -27,7 +27,7 @@ default_categories:
 # gcse: 006270711061491111331:vsivtajjjh0
 
 # Conversion
-markdown: rdiscount
+markdown: kramdown
 
 # Outputting
 relative_permalinks: false

@@ -17,13 +17,26 @@ Headers  : Content-type: application/json; charset=utf-8
 ``` 
 
 #### Parâmetros
+|-----------------+------------+-----------------+----------------|
+| Default aligned |Left aligned| Center aligned  | Right aligned  |
+|-----------------|:-----------|:---------------:|---------------:|
+| First body part |Second cell | Third cell      | fourth cell    |
+| Second line     |foo         | **strong**      | baz            |
+| Third line      |quux        | baz             | bar            |
+|-----------------+------------+-----------------+----------------|
+| Second body     |            |                 |                |
+| 2 line          |            |                 |                |
+|=================+============+=================+================|
+| Footer row      |            |                 |                |
+|-----------------+------------+-----------------+----------------|
+<!--
 <table class="mdl-data-table mdl-js-data-table">
   <thead>
     <tr>
-      <th class="mdl-data-table__cell--non-numeric">Name</th>
-      <th class="mdl-data-table__cell--non-numeric">Nickname</th>
-      <th>Age</th>
-      <th class="mdl-data-table__cell--non-numeric">Living?</th>
+      <th class="mdl-data-table__cell--non-numeric"><strong>Campo</strong></th>
+      <th class="mdl-data-table__cell--non-numeric"><strong>Tipo</strong></th>
+      <th class="mdl-data-table__cell--non-numeric"><strong>Descrição</strong></th>
+      <th class="mdl-data-table__cell--non-numeric"><strong>Obrigatório</strong></th>
     </tr>
   </thead>
   <tbody>
@@ -53,3 +66,4 @@ Headers  : Content-type: application/json; charset=utf-8
     </tr>
   </tbody>
 </table>
+-->
