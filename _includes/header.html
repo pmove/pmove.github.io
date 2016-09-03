@@ -25,8 +25,8 @@
                     {% if p.visible == true %}
                         {% for c in p.categories %}
                             {% if c == category %}
-                                <li class="mdl-list__item mdl-button {% if p.url == page.url %}current{% endif %}">
-                                    <a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
+                                <li class="mdl-list__item mdl-button">
+                                    <a {% if p.url == page.url %}class="current" {% endif %}href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
                                 </li>
                             {% endif %}
                         {% endfor %}
