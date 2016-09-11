@@ -14,13 +14,14 @@ request:
   </div>
 
   {% for tab in site.data[include.data][include.key].options %}
-    <div class="mdl-tabs__panel{% if forloop.first %} is-active{% endif %}" id="{{ tab | downcase }}">
-      {{ "
+    {% assign lower_tab = tab | downcase %}
+    <div class="mdl-tabs__panel{% if forloop.first %} is-active{% endif %}" id="{{ lower }}">
+      {{ '
         Method   : POST
-        Path     : " | append: site.data[include.data][include.key].url | append: "/tab
-        Headers  : Content-type: application/tab; charset=utf-8
+        Path     : ' | append: site.data[include.data][include.key].url | append: '/' | append: lower_tab | append: '
+        Headers  : Content-type: application/' | append: lower_tab | append: '; charset=utf-8
                    Authorization: Basic Base64(login:senha)
-      " | markdownify }}
+      ' | markdownify }}
     </div>
   {% endfor %}
 </div>
