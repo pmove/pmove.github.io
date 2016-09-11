@@ -17,28 +17,28 @@ response:
 
 response_example:
   class: tab-left
-    tabs:
-      -
-        id:     'json'
-        name:   'JSON'
-        active: true
-        body: |
-          ```
-          {
-              "Resposta" : {
-                  "status"   : 1,
-                  "mensagem" : "Sucesso"
-              }
+  tabs:
+    -
+      id:     'json'
+      name:   'JSON'
+      active: true
+      body: |
+        ```
+        {
+          "Resposta" : {
+            "status"   : 1,
+            "mensagem" : "Sucesso"
           }
-          ```
-      -
-        id:     'xml'
-        name:   'XML'
-        active: false
-        body: |
-          ```
-          <resposta>
-            <status>1</status>
-            <mensagem>Sucesso</mensagem>
-          </resposta>
-          ```
+        }
+        ```
+    -
+      id:     'xml'
+      name:   'XML'
+      active: false
+      body: |
+        ```
+        <resposta>
+          <status>1</status>
+          <mensagem>Sucesso</mensagem>
+        </resposta>
+        ```
