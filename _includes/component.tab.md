@@ -7,7 +7,7 @@
 
   {% for tab in site.data[include.data][include.key] %}
     <div class="mdl-tabs__panel {% if tab.active %}is-active{% endif %}" id="{{ tab.id }}">
-      {{ tab.body }}
+      {{ tab.body | markdownify }}
     </div>
   {% endfor %}
 </div>
