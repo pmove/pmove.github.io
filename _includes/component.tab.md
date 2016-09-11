@@ -1,25 +1,25 @@
----
-Modelo: |
-    nome:
-      class: 'tab-left [Classe CSS para a tabela]'
-      tabs:
-        -
-          id:     'json'
-          name:   'JSON'
-          active: true
-          body: |
-            ```
-            Corpo da aba, com suporte a Markdown
-            ```
-        -
-          id:     'xml'
-          name:   'XML'
-          active: false
-          body: |
-            ```
-            Corpo da aba, com suporte a Markdown
-            ```
----
+<!--
+Modelo:
+[nome]:
+  class: 'tab-left' # Classe CSS para a aba
+  tabs:
+    -
+      id:     'json' # id da aba
+      name:   'JSON' # nome de exibição
+      active: true # é a aba ativa?
+      body: |
+        ```
+        Corpo da aba, com suporte a Markdown
+        ```
+    -
+      id:     'xml'
+      name:   'XML'
+      active: false
+      body: |
+        ```
+        Corpo da aba, com suporte a Markdown
+        ```
+-->
 
 <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
   <div class="mdl-tabs__tab-bar {{ site.data[include.data][include.key].class }}">
