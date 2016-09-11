@@ -6,19 +6,13 @@
   </div>
 
   {% for tab in site.data[include.data][include.key].options %}
-    {{ forloop.index }}
-    {{ forloop.first }}
-    {{ tab.index }}
-    {{ site.data[include.data][include.key].options.first }}
-    <div class="mdl-tabs__panel {% if forloop.index == forloop.first %}is-active{% endif %}" id="{{ tab | downcase }}">
-    
+    <div class="mdl-tabs__panel {% if forloop.first %}is-active{% endif %}" id="{{ tab | downcase }}" markdown="1">
       ```
       Method   : POST
       Path     : {{ site.data[include.data][include.key].url }}/{{ tab | downcase }}
       Headers  : Content-type: application/{{ tab | downcase }}; charset=utf-8
                  Authorization: Basic Base64(login:senha)
       ```
-      
     </div>
   {% endfor %}
 </div>
