@@ -61,16 +61,6 @@ table:
       - 'Planejamento deverá pedir o QRCode antes de finalizar?<br />- 1: sim<br />- 0: não'
       - 'Não'
     -
-      - 'qrcode-termino'
-      - 'Boolean'
-      - 'Planejamento deverá pedir o QRCode antes de finalizar?<br />- 1: sim<br />- 0: não'
-      - 'Não'
-    -
-      - 'qrcode-termino'
-      - 'Boolean'
-      - 'Planejamento deverá pedir o QRCode antes de finalizar?<br />- 1: sim<br />- 0: não'
-      - 'Não'
-    -
       - 'status'
       - 'String'
       - 'Status inicial do planejamento. Por padrão "Entrega"<br />
@@ -106,3 +96,137 @@ table:
       -
       - 'Ver parâmetros da rota'
       -
+
+example:
+  class: tab-left
+  tabs:
+    -
+      id:     'json'
+      name:   'JSON'
+      active: true
+      body: |
+        ```
+        {
+          "Planejamento" : {
+            "Usuario" : [
+              { "usuario" : "usuario@empresa.com.br" }
+            ],
+            "grupo"          : "MEU-GRUPO",
+            "programado"     : "2015-10-28",
+            "qrcode-inicio"  : 1,
+            "qrcode-termino" : 1,
+            "presenca"       : 1,
+            "status"         : "Carregamento",
+            "Veiculo"        : "VEI001",
+            "prioritario"    : 1,
+            "descricao"      : "Planejamento ABC",
+            "Rota" : [{
+              "qrcode"      : "PM1001",
+              "nome"        : "Empresa A",
+              "fantasia"    : "Empresa A Ltda",
+              "cnpj"        : "11111111111111",
+              "assinatura"  : 1,
+              "cerca"       : 200,
+
+              "telefone"    : "1133333333",
+              "responsavel" : "Leandro",
+              "descricao"   : "Troca de equipamento",
+              "sla"         : "00:30",
+
+              "endereco"    : "Rua ABC",
+              "numero"      : 111,
+              "complemento" : "Conjunto 11",
+              "bairro"      : "Praça",
+              "cidade"      : "São Paulo",
+              "estado"      : "SP",
+              "cep"         : "01525-000",
+
+              "Info" : {
+                "modelo"    : "ABAB",
+                "serie"     : "110",
+                "ouvidoria" : 1,
+                "contrato"  : "Contrato A",
+                "valor"     : 155.55,
+                "retorno"   : 0
+              },
+
+              "Produto" : [
+                {
+                  "qrcode"    : "PROD111",
+                  "descricao" : "Um produto"
+                },
+                {
+                  ... //Produtos
+                }],
+            },
+            {
+              ... //Planejamentos
+            }]
+          }
+        }
+        ```
+    -
+      id:     'xml'
+      name:   'XML'
+      active: false
+      body: |
+        ```
+        <?xml version="1.0" encoding="UTF-8"?>
+        <Planejamentos>
+          <Planejamento>
+            <Usuario>
+              <usuario>usuario@empresa.com.br</usuario>
+            <Usuario>
+            <grupo>MEU-GRUPO</grupo>
+            <qrcode-inicio>1</qrcode-inicio>
+            <qrcode-termino>1</qrcode-termino>
+            <presenca>1</presenca>
+            <programado>2015-10-28</programado>
+            <status>Carregamento</status>
+            <veiculo>VEI001</veiculo>
+            <prioritario>1</prioritario>
+            <descricao>Planejamento ABC</descricao>
+            <Rota>
+              <qrcode>PM1001</qrcode>
+              <nome>Empresa A</nome>
+              <fantasia>Empresa A Ltda</fantasia>
+              <cnpj>11111111111111</cnpj>
+              <assinatura>1</assinatura>
+              <cerca>200</cerca>
+
+              <telefone>1133333333</telefone>
+              <responsavel>Leandro</responsavel>
+              <descricao>Troca de equipamento</descricao>
+              <sla>00:30</sla>
+
+              <endereco>Rua ABC</endereco>
+              <numero>111</numero>
+              <complemento>Conjunto 11</complemento>
+              <bairro>Praça</bairro>
+              <cidade>São Paulo</cidade>
+              <estado>SP</estado>
+              <cep>01525-000</cep>
+
+              <Info>
+                <modelo>ABAB</modelo>
+                <serie>110</serie>
+                <ouvidoria>1</ouvidoria>
+                <contrato>Contrato A</contrato>
+                <valor>155.55</valor>
+                <retorno>0</retorno>
+              </Info>
+
+              <Produto>
+                <qrcode>PROD111</qrcode>
+                <descricao>Um produto</descricao>
+              </Produto>
+              <Produto>
+                ... //Produtos
+              </Produto>
+            </Rota>
+            <Rota>
+              ... // Rotas
+            </Rota>
+          </Planejamento>
+        </Planejamentos>
+        ```

@@ -13,3 +13,12 @@ Esta forma de serviço utiliza a tecnologia de Web Services em REST, utilizando 
 
 #### Parâmetros
 {% include component.table.md data='adicionar_planejamento' key='table' %}
+
+#### Exemplo
+{% include component.tab.md data='adicionar_planejamento' key='example' %}
+
+#### Resposta
+{% include component.table.md data='common' key='response' %}
+
+#### Exemplo da resposta
+{% include component.table.md data='common' key='response_example' %}
