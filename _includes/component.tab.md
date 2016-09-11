@@ -5,23 +5,9 @@
     {% endfor %}
   </div>
 
-  <div class="mdl-tabs__panel is-active" id="starks-panel">
-    <ul>
-      <li>Eddard</li>
-      <li>Catelyn</li>
-      <li>Robb</li>
-      <li>Sansa</li>
-      <li>Brandon</li>
-      <li>Arya</li>
-      <li>Rickon</li>
-    </ul>
-  </div>
-  <div class="mdl-tabs__panel" id="lannisters-panel">
-    <ul>
-      <li>Tywin</li>
-      <li>Cersei</li>
-      <li>Jamie</li>
-      <li>Tyrion</li>
-    </ul>
-  </div>
+  {% for tab in site.data[include.data][include.key] %}
+    <div class="mdl-tabs__panel {% if tab.active %}is-active{% endif %}" id="{{ tab.id }}">
+      {{ tab.body }}
+    </div>
+  {% endfor %}
 </div>
