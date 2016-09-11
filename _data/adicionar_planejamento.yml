@@ -81,7 +81,6 @@ example:
   class: tab-left
   tabs:
     -
-      id:     'json'
       name:   'JSON'
       active: true
       body: |
@@ -146,7 +145,6 @@ example:
         }
         ```
     -
-      id:     'xml'
       name:   'XML'
       active: false
       body: |
