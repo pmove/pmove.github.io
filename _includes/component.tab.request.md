@@ -15,14 +15,14 @@ request:
 
   {% for tab in site.data[include.data][include.key].options %}
     <div class="mdl-tabs__panel{% if forloop.first %} is-active{% endif %}" id="{{ tab | downcase }}">
-      {{ "
+      {{ '
         ```
         Method   : POST</span>
         Path     : site.data[include.data][include.key].url/tab.downcase
         Headers  : Content-type: application/tab.downcase; charset=utf-8
                    Authorization: Basic Base64(login:senha)
         ```
-      " | markdownify }}
+      ' | markdownify }}
     </div>
   {% endfor %}
 </div>
