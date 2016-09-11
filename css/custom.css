@@ -28,7 +28,10 @@ h4.page {
     margin-top: 0;
 }
 
-.mdl-data-table { white-space: normal; }
+.mdl-data-table {
+    white-space: normal;
+    width: 100%;
+}
 
 /* Classes de alinhamento da aba */
 .tab-left   { justify-content: flex-start; }
