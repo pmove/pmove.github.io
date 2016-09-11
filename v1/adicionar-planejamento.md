@@ -9,7 +9,7 @@ description: "Documentação referente a adição de planejamento"
 Esta forma de serviço utiliza a tecnologia de Web Services em REST, utilizando o protocolo HTTP e retornando um JSON para troca de informações.
 
 #### Requisição
-{% include component.tab.md data='adicionar_planejamento' key='request' %}
+{% include component.tab.request.md data='adicionar_planejamento' key='request' %}
 
 #### Parâmetros
 {% include component.table.md data='adicionar_planejamento' key='table' %}
@@ -18,7 +18,7 @@ Esta forma de serviço utiliza a tecnologia de Web Services em REST, utilizando 
 {% include component.tab.md data='adicionar_planejamento' key='example' %}
 
 #### Resposta
-{% include component.table.md data='commons' key='response' %}
+{% include component.table.md data='common' key='response' %}
 
 #### Exemplo da resposta
-{% include component.tab.md data='commons' key='response_example' %}
+{% include component.tab.md data='common' key='response_example' %}
