@@ -1,4 +1,3 @@
-# Resposta
 response:
   header:
       - 'Campo'
@@ -16,7 +15,6 @@ response:
         - 'String'
         - 'Mensagem do sistema'
 
-# Exemplo da Resposta
 response_example:
   class: tab-left
     tabs:
