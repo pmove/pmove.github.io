@@ -14,8 +14,8 @@ request:
   </div>
 
   {% for tab in site.data[include.data][include.key].options %}
-    {% assign lower_tab = tab | downcase %}
-    <div class="mdl-tabs__panel{% if forloop.first %} is-active{% endif %}" id="{{ lower }}">
+    <div class="mdl-tabs__panel{% if forloop.first %} is-active{% endif %}" id="{{ tab | downcase }}">
+      {% assign lower_tab = tab | downcase %}
       {{ '
         Method   : POST
         Path     : ' | append: site.data[include.data][include.key].url | append: '/' | append: lower_tab | append: '
