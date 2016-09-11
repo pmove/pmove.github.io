@@ -1,18 +1,6 @@
 request:
-  JSON: >
-    ```
-    Method   : POST
-    Path     : http://www.pmove.planmob.com.br/rest/planejamento/insert/json
-    Headers  : Content-type: application/json; charset=utf-8
-               Authorization: Basic Base64(login:senha)
-    ```
-  XML: >
-    ```
-    Method   : POST
-    Path     : http://www.pmove.planmob.com.br/rest/planejamento/insert/xml
-    Headers  : Content-type: application/xml; charset=utf-8
-               Authorization: Basic Base64(login:senha)
-    ```
+  JSON: '1'
+  XML: '2'
 
 table:
   header:
