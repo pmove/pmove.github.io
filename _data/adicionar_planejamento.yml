@@ -3,7 +3,7 @@ request:
     id:     'json'
     name:   'JSON'
     active: true
-    body: >
+    body: |
       ```
       Method   : POST
       Path     : http://www.pmove.planmob.com.br/rest/planejamento/insert/json
@@ -14,7 +14,7 @@ request:
     id:     'xml'
     name:   'XML'
     active: false
-    body: >
+    body: |
       ```
       Method   : POST
       Path     : http://www.pmove.planmob.com.br/rest/planejamento/insert/xml
