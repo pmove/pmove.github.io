@@ -27,3 +27,8 @@ h4.page {
     font-size: 19px;
     margin-top: 0;
 }
+
+/* Classes de alinhamento da aba */
+.tab-left   { justify-content: flex-start; }
+.tab-center { justify-content: center;     }
+.tab-right  { justify-content: flex-end;   }
