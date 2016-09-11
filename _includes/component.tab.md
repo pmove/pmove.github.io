@@ -1,7 +1,7 @@
 <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
   <div class="mdl-tabs__tab-bar">
-    {% for title in site.data[include.data][include.key] %}
-      <a href="#{{ title }}" class="mdl-tabs__tab">{{ title }}</a>
+    {% for tab in site.data[include.data][include.key] %}
+      <a href="#{{ tab.id }}" class="mdl-tabs__tab {% if tab.active %}is-active{% endif %}">{{ tab.name }}</a>
     {% endfor %}
   </div>
 
