@@ -9,13 +9,13 @@ request:
 <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
   <div class="mdl-tabs__tab-bar tab-left">
     {% for tab in site.data[include.data][include.key].options %}
-      <a href="#{{ tab | downcase }}" class="mdl-tabs__tab {% if tab.active %}is-active{% endif %}">{{ tab }}</a>
+      <a href="#{{ tab | downcase }}" class="mdl-tabs__tab {% if forloop.first %}is-active{% endif %}">{{ tab }}</a>
     {% endfor %}
   </div>
 
   {% for tab in site.data[include.data][include.key].options %}
     <div class="mdl-tabs__panel{% if forloop.first %} is-active{% endif %}" id="{{ tab | downcase }}">
-      <div markdown="block">
+      <div markdown="span">
         ```
         Method   : POST
         Path     : {{ site.data[include.data][include.key].url }}/{{ tab | downcase }}
