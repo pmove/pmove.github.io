@@ -21,4 +21,4 @@ Esta forma de serviço utiliza a tecnologia de Web Services em REST, utilizando 
 {% include component.table.md data='common' key='response' %}
 
 #### Exemplo da resposta
-{% include component.table.md data='common' key='response_example' %}
+{% include component.tab.md data='common' key='response_example' %}
