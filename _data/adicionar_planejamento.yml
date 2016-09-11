@@ -102,7 +102,7 @@ example:
             "Rota"           : [{ "Ver ..." }],
           },
           {
-              "...Planejamentos"
+              ... // Planejamentos
           }
         }
         ```
@@ -127,46 +127,14 @@ example:
             <prioritario>1</prioritario>
             <descricao>Planejamento ABC</descricao>
             <Rota>
-              <qrcode>PM1001</qrcode>
-              <nome>Empresa A</nome>
-              <fantasia>Empresa A Ltda</fantasia>
-              <cnpj>11111111111111</cnpj>
-              <assinatura>1</assinatura>
-              <cerca>200</cerca>
-
-              <telefone>1133333333</telefone>
-              <responsavel>Leandro</responsavel>
-              <descricao>Troca de equipamento</descricao>
-              <sla>00:30</sla>
-
-              <endereco>Rua ABC</endereco>
-              <numero>111</numero>
-              <complemento>Conjunto 11</complemento>
-              <bairro>Praça</bairro>
-              <cidade>São Paulo</cidade>
-              <estado>SP</estado>
-              <cep>01525-000</cep>
-
-              <Info>
-                <modelo>ABAB</modelo>
-                <serie>110</serie>
-                <ouvidoria>1</ouvidoria>
-                <contrato>Contrato A</contrato>
-                <valor>155.55</valor>
-                <retorno>0</retorno>
-              </Info>
-
-              <Produto>
-                <qrcode>PROD111</qrcode>
-                <descricao>Um produto</descricao>
-              </Produto>
-              <Produto>
-                ... //Produtos
-              </Produto>
+              Ver ...
             </Rota>
             <Rota>
               ... // Rotas
             </Rota>
+          </Planejamento>
+          <Planejamento>
+            ... // Planejamentos
           </Planejamento>
         </Planejamentos>
         ```
