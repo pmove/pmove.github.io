@@ -13,7 +13,7 @@
     {% for body in site.data[include.data][include.key].body %}
     <tr>
         {% for cell in body %}
-        <td class="mdl-data-table__cell--non-numeric">{{ cell }}</td>
+        <td class="mdl-data-table__cell--non-numeric">{{ cell | markdownify }}</td>
         {% endfor %}
     </tr>
     {% endfor %}
