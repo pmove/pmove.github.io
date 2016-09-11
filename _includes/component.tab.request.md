@@ -17,9 +17,9 @@ request:
     <div class="mdl-tabs__panel{% if forloop.first %} is-active{% endif %}" id="{{ tab | downcase }}">
       <div markdown="span">
         ```
-        Method   : POST\n
-        Path     : {{ site.data[include.data][include.key].url }}/{{ tab | downcase }}\n
-        Headers  : Content-type: application/{{ tab | downcase }}; charset=utf-8\n
+        Method   : POST<br />
+        Path     : {{ site.data[include.data][include.key].url }}/{{ tab | downcase }}<br />
+        Headers  : Content-type: application/{{ tab | downcase }}; charset=utf-8<br />
                    Authorization: Basic Base64(login:senha)
         ```
       </div>
