@@ -16,7 +16,7 @@ Headers  : Content-type: application/json; charset=utf-8
            Authorization: Basic Base64(login:senha)
 ``` 
 
-{% include component.tab.md %}
+{% include component.tab.md data='adicionar_planejamento' key='request' %}
 
 #### Parâmetros
 {% include component.table.md data='adicionar_planejamento' key='table' %}

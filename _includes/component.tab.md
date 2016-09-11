@@ -1,8 +1,8 @@
 <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
   <div class="mdl-tabs__tab-bar">
-      <a href="#starks-panel" class="mdl-tabs__tab is-active">Starks</a>
-      <a href="#lannisters-panel" class="mdl-tabs__tab">Lannisters</a>
-      <a href="#targaryens-panel" class="mdl-tabs__tab">Targaryens</a>
+    {% for title in site.data[include.data][include.key] %}
+      <a href="#{{ title }}" class="mdl-tabs__tab">{{ title }}</a>
+    {% endfor %}
   </div>
 
   <div class="mdl-tabs__panel is-active" id="starks-panel">
@@ -22,12 +22,6 @@
       <li>Cersei</li>
       <li>Jamie</li>
       <li>Tyrion</li>
-    </ul>
-  </div>
-  <div class="mdl-tabs__panel" id="targaryens-panel">
-    <ul>
-      <li>Viserys</li>
-      <li>Daenerys</li>
     </ul>
   </div>
 </div>
