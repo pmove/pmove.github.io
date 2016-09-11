@@ -6,4 +6,5 @@ request:
     - 'JSON' # Opções da aba, é o mesmo para id
     - 'XML'
 -->
-{% mardown __component.tab.request.md data='adicionar_planejamento' key='request' %}
+{% capture inc %}{% include _component.tab.request.md data='adicionar_planejamento' key='request' %}{% endcapture %}
+{{ inc | markdownify }}
