@@ -1,19 +1,19 @@
 response:
   header:
-      - 'Campo'
-      - 'Tipo'
-      - 'Descrição'
-    body:
-      -
-        - 'status'
-        - 'Boolean'
-        - 'Status de retorno:<br />
-            - 1: sucesso<br />
-            - 0: erro'
-      -
-        - 'mensagem'
-        - 'String'
-        - 'Mensagem do sistema'
+    - 'Campo'
+    - 'Tipo'
+    - 'Descrição'
+  body:
+    -
+      - 'status'
+      - 'Boolean'
+      - 'Status de retorno:<br />
+        - 1: sucesso<br />
+        - 0: erro'
+    -
+      - 'mensagem'
+      - 'String'
+      - 'Mensagem do sistema'
 
 response_example:
   class: tab-left
