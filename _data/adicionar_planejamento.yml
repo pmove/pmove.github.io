@@ -45,10 +45,10 @@ table:
       - 'programado'
       - 'String'
       - 'Data programado para o planejamento.<br />
-      Formatos aceitos:<br />
-      - YYYY-mm-dd<br />
-      - dd/mm/YYYY<br />
-      Caso não seja informado, fica sendo a data atual'
+        Formatos aceitos:<br />
+        - YYYY-mm-dd<br />
+        - dd/mm/YYYY<br />
+        Caso não seja informado, fica sendo a data atual'
       - 'Não'
     -
       - 'qrcode-inicio'
@@ -70,3 +70,39 @@ table:
       - 'Boolean'
       - 'Planejamento deverá pedir o QRCode antes de finalizar?<br />- 1: sim<br />- 0: não'
       - 'Não'
+    -
+      - 'status'
+      - 'String'
+      - 'Status inicial do planejamento. Por padrão "Entrega"<br />
+        - Carregamento<br />
+        - Entrega'
+      - 'Não'
+    -
+      - 'veiculo'
+      - 'String'
+      - 'QRCode de identificação do veículo'
+      - 'Não'
+    -
+      - 'prioritario'
+      - 'Boolean'
+      - 'Planejamento é prioritário? (Entende-se por prioritário os planejamentos que precisam de mais que 1 dia para finalizar)<br />
+        - 1: sim<br />
+        - 0: não'
+      - 'Não'
+    -
+      - 'presenca'
+      - 'Boolean'
+      - 'Pedir presença dos usuários?<br />
+        - 1: sim<br />
+        - 0: não'
+      - 'Não'
+    -
+      - 'descricao'
+      - 'String'
+      - 'Breve descrição sobre o planejamento'
+      - 'Não'
+    -
+      - 'Rota'
+      -
+      - 'Ver parâmetros da rota'
+      -
