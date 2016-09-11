@@ -99,48 +99,10 @@ example:
             "Veiculo"        : "VEI001",
             "prioritario"    : 1,
             "descricao"      : "Planejamento ABC",
-            "Rota" : [{
-              "qrcode"      : "PM1001",
-              "nome"        : "Empresa A",
-              "fantasia"    : "Empresa A Ltda",
-              "cnpj"        : "11111111111111",
-              "assinatura"  : 1,
-              "cerca"       : 200,
-
-              "telefone"    : "1133333333",
-              "responsavel" : "Leandro",
-              "descricao"   : "Troca de equipamento",
-              "sla"         : "00:30",
-
-              "endereco"    : "Rua ABC",
-              "numero"      : 111,
-              "complemento" : "Conjunto 11",
-              "bairro"      : "Praça",
-              "cidade"      : "São Paulo",
-              "estado"      : "SP",
-              "cep"         : "01525-000",
-
-              "Info" : {
-                "modelo"    : "ABAB",
-                "serie"     : "110",
-                "ouvidoria" : 1,
-                "contrato"  : "Contrato A",
-                "valor"     : 155.55,
-                "retorno"   : 0
-              },
-
-              "Produto" : [
-                {
-                  "qrcode"    : "PROD111",
-                  "descricao" : "Um produto"
-                },
-                {
-                  ... //Produtos
-                }],
-            },
-            {
-              ... //Planejamentos
-            }]
+            "Rota"           : [{ "Ver ..." }],
+          },
+          {
+              "...Planejamentos"
           }
         }
         ```
